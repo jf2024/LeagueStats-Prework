@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.selectors {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#results {
+  margin-top: 30px;
+}
