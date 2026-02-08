@@ -1,39 +1,52 @@
-<h1>League Dashboard</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>League Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<form id="controls">
-  <label>
-    League:
-    <select id="league-select">
-        
-      <option>Premier League</option>
-      <option>La Liga</option>
-      <option>Serie A</option>
-      <option>Liga MX</option>
-      <option>MLS</option>
-      <option>NWSL</option>
+  <h1>League Dashboard</h1>
 
-    </select>
-  </label>
+  <form id="controls">
+    <div class="selectors">
+      <label>
+        League:
+        <select id="league-select">
+          <option>Premier League</option>
+          <option>La Liga</option>
+          <option>Serie A</option>
+          <option>Liga MX</option>
+          <option>MLS</option>
+          <option>NWSL</option>
+        </select>
+      </label>
 
-  <label>
-    Season:
-    <select id="season-select">
-      <option>2015</option>
-      <option>2016</option>
-      <option>2017</option>
-      <option>2018</option>
-      <option>2019</option>
-      <option>2020</option>
-      <option>2021</option>
-      <option>2022</option>
-      <option>2023</option>
-      <option>2024</option>
-      <option>2025</option>
+      <label>
+        Season:
+        <select id="season-select">
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+        </select>
+      </label>
+    </div>
 
-    </select>
-  </label>
+    <button type="submit">Load Data</button>
+  </form>
 
-  <button type="submit">Load Data</button>
-</form>
+  <div id="results"></div>
 
-<div id="results"></div>
+  <script src="app.js"></script>
+</body>
+</html>
