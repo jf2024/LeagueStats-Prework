@@ -1,28 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<h1>League Dashboard</h1>
 
-<h1>This will be my website for league standings and general info</h1>
+<form id="controls">
+  <label>
+    League:
+    <select id="league-select">
+        
+      <option>Premier League</option>
+      <option>La Liga</option>
+      <option>Serie A</option>
+      <option>Liga MX</option>
+      <option>MLS</option>
+      <option>NWSL</option>
 
+    </select>
+  </label>
 
-<form> 
-<label for="color">Choose a color:</label> 
+  <label>
+    Season:
+    <select id="season-select">
+      <option>2015</option>
+      <option>2016</option>
+      <option>2017</option>
+      <option>2018</option>
+      <option>2019</option>
+      <option>2020</option>
+      <option>2021</option>
+      <option>2022</option>
+      <option>2023</option>
+      <option>2024</option>
+      <option>2025</option>
 
-     <select id="color" name="color">  
+    </select>
+  </label>
 
-          <option value="red">Red</option> 
-          <option value="yellow">Yellow</option> 
-          <option value="blue">Blue</option>
-
-     </select> 
-     <br><br>
+  <button type="submit">Load Data</button>
 </form>
 
-
-<button type="button">Search</button>
-
-</body>
-</html> 
+<div id="results"></div>
