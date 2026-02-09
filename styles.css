@@ -5,6 +5,7 @@ body {
 
 h1 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .selectors {
@@ -25,6 +26,28 @@ button {
   cursor: pointer;
 }
 
+#controls label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
 #results {
   margin-top: 30px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+#results > div {
+  flex: 1;
 }
